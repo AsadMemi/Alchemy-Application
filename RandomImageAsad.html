@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Alchemy</h1>
+
+<p>Test.</p>
+<p id="imageholder"></p>
+<button type="button" onclick="Randompic()">Click here
+
+</button>
+
+</body>
+
+
+
+</html>
+
+<script>
+
+var Image = new Array("https://images.dog.ceo/breeds/springer-english/n02102040_5283.jpg", "https://images.dog.ceo/breeds/hound-afghan/n02088094_1270.jpg", "https://images.dog.ceo/breeds/retriever-chesapeake/n02099849_2416.jpg");
+
+function Randompic() {
+var number = Math.floor(Math.random()*Image.length);
+var p = document.getElementById("imageholder");
+   p.innerHTML="<img src='"+Image[number]+"' >";
+}
+
+</script>
